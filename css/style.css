@@ -1,0 +1,164 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+:root{
+	--dark_bg: #0a0e14;
+	--dark_fg: #d4d5d1;
+	--dark_orange: #ff8f40;
+	--dark_blue: #3ea7dc;
+	--dark_green: #89b73d;
+	--dark_red: #ff3333;
+	--dark_purple:#a37acc;
+	--dark_grey: #686868;
+	--dark_black: #01060e;
+	--light_bg: #e5ebf2;
+	--light_fg: #1f2430;
+	--light_orange: #fa8d3e;
+	--light_blue: #399ee6;
+	--light_green: #86b300;
+	--light_red: #f51818;
+	--light_purple:#6E5DA8;
+	--light_grey: #abb0b6;
+	--light_black: #0a0e14;
+	-webkit-font-smoothing: antialiased;
+}
+
+body{
+	background: var(--light_bg);
+	font-family: sans-serif;
+	color: var(--light_fg);
+}
+
+.container{
+	width: 900px;
+	margin: 30px auto;
+	padding: 50px 0 1px;
+	background: #fff;
+	border-radius: 0.9375rem;
+}
+
+header{
+	width: 850px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+h1{
+	font-size: 28px;
+}
+
+h2{
+	font-size: 20px;
+}
+
+h1, h2{
+	line-height: 3;
+}
+
+ul li, ol li, p{
+	font-size: 16px;
+	margin-bottom: 0.9375rem;
+	line-height: 1.5;
+}
+
+figure{
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+}
+
+.cover img{
+	width: 53.125rem;
+	height: 31.25rem;
+	object-fit: cover;
+	object-position: 0 -3.125rem;
+	border-radius: 0.9375rem;
+}
+
+.detail{
+	width: 670px;
+	margin: auto;
+	margin-bottom: 30px;
+}
+
+.detail img{
+	border-radius: 0.9375rem;
+}
+
+figcaption {
+	font-size: 0.75rem;
+	color: var(--light_purple);
+	position: relative;
+	top: 0.3125rem;
+}
+
+.reference{
+	font-size: 14px;
+	position: relative;
+	top: 20px;
+}
+
+main{
+	width: 90%;
+	margin: 25px auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.align{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+section{
+	width: 45%;
+	align-self: flex-start;
+}
+
+aside{
+	width: 45%;
+	align-self: flex-end;
+}
+
+.info{
+	width: 100%;
+	display: block;
+}
+
+.additionalInfo{
+	font-style: italic;
+	font-weight: bold;
+	color: var(--light_purple);
+	margin-bottom: 30px;
+}
+
+footer{
+	width: 100%;
+	height: 150px;
+	padding: 50px;
+	display: flex;
+	font-size: 12px;
+	align-items: center;
+	justify-content: center;
+}
+
+a {
+	color: #3EA7DC;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+a:active {
+	color: #FF8F40;
+}
+
+a:visited {
+	color: #A37ACC;
+}
