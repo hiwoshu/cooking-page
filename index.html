@@ -17,7 +17,7 @@
 			<header>
 				<h1>Massa de Pizza sem Glúten e sem Lactose</h1>
 				<figure class="cover">
-					<a href="assets/detail.jpg" target="_blank"><img src="assets/detail.jpg" alt="imagem de pizza sem gluten e sem lactose" /></a>
+					<img src="assets/detail.jpg" alt="imagem de pizza sem gluten e sem lactose" />
 					<figcaption>Resultado esperado da receita ─ Pizza sem Glúten e sem Lactose</figcaption>
 				</figure>
 				<p class="reference">Receita por 
@@ -64,7 +64,7 @@
 					<p class="additionalInfo">Tempo de preparo: 10 minutos <span style="font-style: normal;">&nbsp;&nbsp;|&nbsp;</span> Tempo de cozimento: 30 minutos <span style="font-style: normal;">&nbsp;&nbsp;|&nbsp;</span> Rendimento 1 disco de pizza médio</p>
 
 					<figure class="detail">
-						<a href="assets/cover.png" target="_blank"><img src="assets/cover.png" alt="imagem de detalhe da pizza sem gluten e sem lactose" /></a>
+						<img src="assets/cover.png" alt="imagem de detalhe da pizza sem gluten e sem lactose" />
 						<figcaption>Detalhe ─ Pizza sem Glúten e sem Lactose</figcaption>
 					</figure>
 
@@ -79,10 +79,57 @@
 						<li>Ovo: experimente colocar 1/4 xícara de purê de inhame – é uma sugestão, nunca testei!</li>
 					</ul>
 				</div>
+				<div class="popup-image">
+					<!-- <span>&times;</span> -->
+					<span>
+						<svg
+							width="20"
+							height="20"
+							viewBox="0 0 10.583333 10.583333"
+							version="1.1"
+							id="svg1"
+							inkscape:version="1.3 (1:1.3+202307231459+0e150ed6c4)"
+							sodipodi:docname="close.svg"
+							xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+							xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:svg="http://www.w3.org/2000/svg">
+							<defs
+								id="defs1" />
+							<g
+								inkscape:label="Camada 1"
+								inkscape:groupmode="layer"
+								id="layer1">
+								<g
+									id="g2">
+									<path
+										style="fill:none;stroke:#ffffff;stroke-width:1.32291;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+										d="M 1.3296153,1.3296153 9.2445759,9.2445759"
+										id="path1" />
+									<path
+										style="fill:none;stroke:#ffffff;stroke-width:1.32291;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+										d="M 9.152279,1.2373183 1.2373183,9.152279"
+										id="path2" />
+								</g>
+							</g>
+						</svg>
+					</span>
+					<img src="assets/detail.jpg" alt="">
+				</div>
 			</main>
 		</div>
 		<footer>
 			&copy;2022 Página por <a href="https://github.com/hiwoshu" target="_blank">&nbsp;Hiwoshu</a>
 		</footer>
+
+		<script>
+			document.querySelector('.cover img').onclick = () =>{
+					document.querySelector('.popup-image').style.display = 'block';
+				};
+
+			document.querySelector('.popup-image span').onclick = () =>{
+				document.querySelector('.popup-image').style.display = 'none';
+			}
+		</script>
   </body>
 </html>
