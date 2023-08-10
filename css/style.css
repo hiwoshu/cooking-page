@@ -154,7 +154,7 @@ aside{
 .popup-image span{
 	position: absolute;
 	top: 0;
-	right: 10px;
+	right: 20px;
 	font-size: 40px;
 	font-weight: bolder;
 	color: var(--light_bg);
