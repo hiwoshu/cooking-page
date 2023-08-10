@@ -7,39 +7,48 @@
 }
 
 :root{
-	--dark_bg: #0a0e14;
-	--dark_fg: #d4d5d1;
-	--dark_orange: #ff8f40;
-	--dark_blue: #3ea7dc;
-	--dark_green: #89b73d;
-	--dark_red: #ff3333;
-	--dark_purple:#a37acc;
-	--dark_grey: #686868;
-	--dark_black: #01060e;
-	--light_bg: #e5ebf2;
-	--light_fg: #1f2430;
-	--light_orange: #fa8d3e;
-	--light_blue: #399ee6;
-	--light_green: #86b300;
-	--light_red: #f51818;
-	--light_purple:#6E5DA8;
-	--light_grey: #abb0b6;
-	--light_black: #0a0e14;
+	--background-color: #e5ebf2;
+	--foreground-color: #1f2430;
+	--alert-color: #fa8d3e;
+	--link-color: #399ee6;
+	--success-color: #86b300;
+	--dandger-color: #f51818;
+	--link-visited-color:#6E5DA8;
+	--secondary-color: #abb0b6;
+	--primary-color: #ffffff;
 	-webkit-font-smoothing: antialiased;
 }
 
+.dark-theme{
+	--background-color: #01060e;
+	--foreground-color: #d4d5d1;
+	--alert-color: #ff8f40;
+	--link-color: #3EA7DC;
+	--success-color: #89b73d;
+	--dandger-color: #ff3333;
+	--link-visited-color:#a37acc;
+	--secondary-color: #686868;
+	--primary-color: #0a0e14;
+}
+
 body{
-	background: var(--light_bg);
+	background: var(--background-color);
 	font-family: sans-serif;
-	color: var(--light_fg);
+	color: var(--foreground-color);
 }
 
 .container{
 	width: 900px;
 	margin: 30px auto;
-	padding: 50px 0 1px;
-	background: #fff;
+	padding: 30px 0 1px;
+	background: var(--primary-color);
 	border-radius: 0.9375rem;
+}
+
+.theme{
+	position: relative;
+	left: 94%;
+	cursor: pointer;
 }
 
 header{
@@ -94,7 +103,7 @@ figure{
 
 figcaption {
 	font-size: 0.75rem;
-	color: var(--light_purple);
+	color: var(--link-visited-color);
 	position: relative;
 	top: 0.3125rem;
 }
@@ -136,7 +145,7 @@ aside{
 .additionalInfo{
 	font-style: italic;
 	font-weight: bold;
-	color: var(--light_purple);
+	color: var(--link-visited-color);
 	margin-bottom: 30px;
 }
 
@@ -144,7 +153,7 @@ aside{
 	position: fixed;
 	top: 0;
 	left: 0;
-	background: rgba(0, 0, 0, .9);
+	background: rgba(10, 14, 20, .8);
 	width: 100%;
 	height: 100%;
 	z-index: 100;
@@ -157,7 +166,7 @@ aside{
 	right: 20px;
 	font-size: 40px;
 	font-weight: bolder;
-	color: var(--light_bg);
+	color: var(--background-color);
 	cursor: pointer;
 	z-index: 100;
 }
@@ -181,15 +190,15 @@ footer{
 }
 
 a {
-	color: #3EA7DC;
+	color: var(--link-color);
 	text-decoration: none;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
 a:active {
-	color: #FF8F40;
+	color: var(--alert-color);
 }
 
 a:visited {
-	color: #A37ACC;
+	color: var(--link-visited-color);
 }
